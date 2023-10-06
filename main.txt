@@ -1,0 +1,15 @@
+Certainly! Here's an example of a Python program that uses recursion:
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+num = int(input("Enter a number: "))
+result = factorial(num)
+print("The factorial of", num, "is", result)
+```
+
+In this program, the `factorial` function is defined to calculate the factorial of a given number `n`. It uses recursion by calling itself with a smaller value of `n` until the base case (`n == 0`) is reached. The factorial of `n` is calculated by multiplying `n` with the factorial of `n-1`. Finally, the program prompts the user to enter a number, calculates its factorial using the `factorial` function, and prints the result.
